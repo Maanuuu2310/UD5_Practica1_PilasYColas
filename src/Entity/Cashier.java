@@ -11,7 +11,7 @@ public class Cashier {
         this.name = name;
     }
 
-    public void enqueueClient(Client client){
+    public void enqueueClient(Client client) {
         clientsQueue.enqueue(client);
     }
 

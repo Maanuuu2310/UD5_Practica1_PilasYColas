@@ -1,7 +1,7 @@
 package Entity;
 
 public class Client {
-    
+
     String name;
     ShoppingCart cart;
 
@@ -23,6 +23,5 @@ public class Client {
         output += "============================================== \n";
         return output;
     }
-
 
 }

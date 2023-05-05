@@ -3,7 +3,7 @@ package Entity;
 import java.util.ArrayList;
 
 public class ShoppingCart {
-    
+
     ArrayList<String> items;
 
     ShoppingCart() {
@@ -30,6 +30,5 @@ public class ShoppingCart {
         }
         return output;
     }
-
 
 }
