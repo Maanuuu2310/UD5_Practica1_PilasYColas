@@ -2,7 +2,11 @@ package Products;
 
 import java.util.Random;
 
+import Entity.ShoppingCart;
+
 public class Products {
+
+    private static Random random = new Random();
 
     private static String[] products = {
             "Cepillo de dientes",
@@ -20,9 +24,17 @@ public class Products {
     };
 
     public static String getRandomProduct() {
-        Random random = new Random();
         int randomIndex = random.nextInt(products.length);
         return products[randomIndex];
+    }
+
+    public static ShoppingCart generateRandomShopCart() {
+        ShoppingCart toReturnCart = new ShoppingCart();
+        for (int i = 0; i < random.nextInt(10) + 1; i++) {
+            String randomProduct = getRandomProduct();
+            toReturnCart.push(randomProduct);
+        }
+        return toReturnCart;
     }
 
 }

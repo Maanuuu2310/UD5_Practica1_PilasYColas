@@ -26,7 +26,7 @@ public class ClientQueue {
     public String toString() {
         String output = "";
         for (int i = 0; i < this.size(); i++) {
-            output += "\t- " + clients.get(i) + "\n";
+            output += clients.get(i) + "\n";
         }
         return output;
     }

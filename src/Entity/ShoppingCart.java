@@ -6,7 +6,7 @@ public class ShoppingCart {
 
     ArrayList<String> items;
 
-    ShoppingCart() {
+    public ShoppingCart() {
         items = new ArrayList<String>(5);
     }
 
