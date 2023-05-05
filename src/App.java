@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 import Entity.Cashier;
 import Entity.Client;
-import Entity.ShoppingCart;
 import Products.Products;
 
 public class App {
